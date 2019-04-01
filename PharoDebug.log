@@ -1325,3 +1325,358 @@ WorldState>>doOneCycleNowFor:
 WorldState>>doOneCycleFor:
 	Receiver: a WorldState
 	Arguments and temporary variables: 
+THERE_BE_DRAGONS_HERE
+Instance of Character did not understand #agregarPregunta:
+1 April 2019 2:29:02.620697 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60547]
+
+Character(Object)>>doesNotUnderstand: #agregarPregunta:
+	Receiver: $a
+	Arguments and temporary variables: 
+		aMessage: 	agregarPregunta: a Pregunta
+		exception: 	MessageNotUnderstood: Character>>agregarPregunta:
+		resumeValue: 	nil
+	Receiver's instance variables: 
+$a
+
+[ :each | each agregarPregunta: self ] in Pregunta>>conTitulo:conDescripcion:topicos:conUsuario:
+	Receiver: a Pregunta
+	Arguments and temporary variables: 
+		unTitulo: 	'aaa'
+		unaDescripcion: 	'eeee'
+		unTopicos: 	'aaaaa'
+		unUsuario: 	'lopez'
+		each: 	$a
+	Receiver's instance variables: 
+		titulo: 	'aaa'
+		descripcion: 	'eeee'
+		respuestas: 	an OrderedCollection()
+		likes: 	an OrderedCollection()
+		dislikes: 	an OrderedCollection()
+		fechaCreacion: 	2019-04-01T00:00:00-03:00
+		topicos: 	'aaaaa'
+		usuario: 	'lopez'
+
+
+ByteString(SequenceableCollection)>>do:
+	Receiver: 'aaaaa'
+	Arguments and temporary variables: 
+		aBlock: 	[ :each | each agregarPregunta: self ]
+		index: 	1
+	Receiver's instance variables: 
+'aaaaa'
+
+Pregunta>>conTitulo:conDescripcion:topicos:conUsuario:
+	Receiver: a Pregunta
+	Arguments and temporary variables: 
+		unTitulo: 	'aaa'
+		unaDescripcion: 	'eeee'
+		unTopicos: 	'aaaaa'
+		unUsuario: 	'lopez'
+	Receiver's instance variables: 
+		titulo: 	'aaa'
+		descripcion: 	'eeee'
+		respuestas: 	an OrderedCollection()
+		likes: 	an OrderedCollection()
+		dislikes: 	an OrderedCollection()
+		fechaCreacion: 	2019-04-01T00:00:00-03:00
+		topicos: 	'aaaaa'
+		usuario: 	'lopez'
+
+
+Pregunta class>>conTitulo:conDescripcion:topicos:conUsuario:
+	Receiver: Pregunta
+	Arguments and temporary variables: 
+		unTitulo: 	'aaa'
+		unDescripcion: 	'eeee'
+		unTopicos: 	'aaaaa'
+		unUsuario: 	'lopez'
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#agregarRespuesta:->Pregunta>>#agregarRespuesta:...etc...
+		format: 	65544
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Pregunta
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#TrabajoPractico1
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		pregunta1: 	nil
+		pregunta2: 	nil
+		pregunta3: 	nil
+		pregunta4: 	nil
+		pregunta5: 	nil
+		topico1: 	a Topico
+		topico2: 	a Topico
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'|pregunta1 pregunta2 pregunta3 pregunta4 pregunta5 topico1 top...etc...
+		itsSelection: 	a Text for '|pregunta1 pregunta2 pregunta3 pregunta4 pregunta5 to...etc...
+		itsSelectionString: 	'|pregunta1 pregunta2 pregunta3 pregunta4 pregunta5 topico1...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	| pregunta1 pregunta2 pregunta3 pregunta4 pregunta5 topico1 topico2 ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+THERE_BE_DRAGONS_HERE
+#obtenerPreguntasDeInteres was sent to nil
+1 April 2019 2:35:17.486697 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60547]
+
+UndefinedObject(Object)>>doesNotUnderstand: #obtenerPreguntasDeInteres
+	Receiver: nil
+	Arguments and temporary variables: 
+		aMessage: 	obtenerPreguntasDeInteres
+		exception: 	MessageNotUnderstood: receiver of "obtenerPreguntasDeInteres" is nil...etc...
+		resumeValue: 	nil
+	Receiver's instance variables: 
+nil
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'usuario obtenerPreguntasDeInteres .'
+		itsSelection: 	a Text for 'usuario obtenerPreguntasDeInteres .'
+		itsSelectionString: 	'usuario obtenerPreguntasDeInteres .'
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ usuario obtenerPreguntasDeInteres
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(704284160)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | 
+textMorph shoutStyler style: textMorph text.
+GLMPrintPoppe...etc...
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(704284160)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>popupPrint
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(740660480)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+MorphicAlarm(MessageSend)>>value
+	Receiver: MorphicAlarm(#popupPrint -> a GLMMorphicPharoScriptRenderer)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPharoScriptRenderer
+		selector: 	#popupPrint
+		arguments: 	#()
+		scheduledTime: 	4585379
+		numArgs: 	0
+
+
+MorphicAlarm>>value:
+	Receiver: MorphicAlarm(#popupPrint -> a GLMMorphicPharoScriptRenderer)
+	Arguments and temporary variables: 
+		anArgument: 	4585384
+		nArgs: 	0
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPharoScriptRenderer
+		selector: 	#popupPrint
+		arguments: 	#()
+		scheduledTime: 	4585379
+		numArgs: 	0
+
+
+WorldState>>triggerAlarmsBefore:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		nowTime: 	4585384
+		pending: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(175170304)))
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1350@689)
+		canvas: 	a FormCanvas on: DisplayScreen(1350x689x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(25136640))(a DropListM...etc...
+		lastStepTime: 	4585364
+		lastStepMessage: 	nil
+		lastCycleTime: 	4585384
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(175170304)))
+		lastAlarmTime: 	4585364
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>runLocalStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		now: 	4585384
+		morphToStep: 	nil
+		stepTime: 	nil
+		priorWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1350@689)
+		canvas: 	a FormCanvas on: DisplayScreen(1350x689x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(25136640))(a DropListM...etc...
+		lastStepTime: 	4585364
+		lastStepMessage: 	nil
+		lastCycleTime: 	4585384
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(175170304)))
+		lastAlarmTime: 	4585364
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	nil
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1350@689)
+		canvas: 	a FormCanvas on: DisplayScreen(1350x689x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(25136640))(a DropListM...etc...
+		lastStepTime: 	4585364
+		lastStepMessage: 	nil
+		lastCycleTime: 	4585384
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(175170304)))
+		lastAlarmTime: 	4585364
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+THERE_BE_DRAGONS_HERE
+#obtenerPreguntasDeInteres was sent to nil
+1 April 2019 2:35:23.003697 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60547]
+
+UndefinedObject(Object)>>doesNotUnderstand: #obtenerPreguntasDeInteres
+	Receiver: nil
+	Arguments and temporary variables: 
+		aMessage: 	obtenerPreguntasDeInteres
+		exception: 	MessageNotUnderstood: receiver of "obtenerPreguntasDeInteres" is nil...etc...
+		resumeValue: 	nil
+	Receiver's instance variables: 
+nil
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'usuario obtenerPreguntasDeInteres .'
+		itsSelection: 	a Text for 'usuario obtenerPreguntasDeInteres .'
+		itsSelectionString: 	'usuario obtenerPreguntasDeInteres .'
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ usuario obtenerPreguntasDeInteres
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(704284160)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
