@@ -1,0 +1,1327 @@
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\Agustin\Documents\Pharo\vms\private\6521\PharoV60.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+26 March 2019 1:40:36.048046 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60547]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\Agustin\Documents\Ph...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\Agustin\Documents\Ph...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\Agustin\Documents\Pharo\vms\private\6521...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\Agustin\Documents\Pharo\vms\private\6521\PharoV60.sources'
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	nil
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+SmalltalkImage class>>startUp:
+	Receiver: SmalltalkImage
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(size 202)
+		format: 	65541
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SmalltalkImage
+		classPool: 	a Dictionary(#CompilerClass->OpalCompiler #LastImagePath->'C:\Users\...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Support'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SmalltalkImage)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SmalltalkImage
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-26T13:40:35.943046-03:00
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-26T13:40:35.943046-03:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-26T13:40:35.943046-03:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-26T13:40:35.943046-03:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-26T13:40:35.943046-03:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-26T13:40:35.943046-03:00
+
+
+SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+CurrentExecutionEnvironment class>>activate:for:
+	Receiver: CurrentExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	a DefaultExecutionEnvironment
+		arg2: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		superclass: 	ProcessLocalVariable
+		methodDict: 	a MethodDictionary(#default->CurrentExecutionEnvironment>>#default ...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CurrentExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		soleInstance: 	a CurrentExecutionEnvironment
+
+
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+	Receiver: a DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+a DefaultExecutionEnvironment
+
+DefaultExecutionEnvironment class>>beActiveDuring:
+	Receiver: DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+		superclass: 	ExecutionEnvironment
+		methodDict: 	a MethodDictionary(#prepareForNewProcess:->DefaultExecutionEnvironm...etc...
+		format: 	0
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#DefaultExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		instance: 	a DefaultExecutionEnvironment
+
+
+SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+ImageCleanerCommandLineHandler>>activate
+	Receiver: an ImageCleanerCommandLineHandler
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		commandLine: 	a CommandLineArguments
+		session: 	a WorkingSession
+		stdout: 	a VTermOutputDriver
+		stderr: 	a VTermOutputDriver
+
+
+ImageCleanerCommandLineHandler class(CommandLineHandler class)>>activateWith:
+	Receiver: ImageCleanerCommandLineHandler
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		superclass: 	CommandLineHandler
+		methodDict: 	a MethodDictionary(#activate->ImageCleanerCommandLineHandler>>#acti...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#ImageCleanerCommandLineHandler
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Tool-ImageCleaner'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+[ arg1 activateWith: commandLine ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+	Receiver: a PharoCommandLineHandler
+	Arguments and temporary variables: 
+		arg1: 	ImageCleanerCommandLineHandler
+	Receiver's instance variables: 
+		commandLine: 	a CommandLineArguments
+		session: 	a WorkingSession
+		stdout: 	a VTermOutputDriver
+		stderr: 	a VTermOutputDriver
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg1 activateWith: commandLine ]
+	Arguments and temporary variables: 
+		arg1: 	Exit
+		arg2: 	[ :arg2 | ^ self handleExit: arg2 for: arg1 ]
+	Receiver's instance variables: 
+		outerContext: 	PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubComm...etc...
+		startpc: 	34
+		numArgs: 	0
+
+
+PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+	Receiver: a PharoCommandLineHandler
+	Arguments and temporary variables: 
+		arg1: 	ImageCleanerCommandLineHandler
+	Receiver's instance variables: 
+		commandLine: 	a CommandLineArguments
+		session: 	a WorkingSession
+		stdout: 	a VTermOutputDriver
+		stderr: 	a VTermOutputDriver
+
+
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleSubcommand
+	Receiver: a PharoCommandLineHandler
+	Arguments and temporary variables: 
+		tmp1: 	an OrderedCollection(ImageCleanerCommandLineHandler)
+	Receiver's instance variables: 
+		commandLine: 	a CommandLineArguments
+		session: 	a WorkingSession
+		stdout: 	a VTermOutputDriver
+		stderr: 	a VTermOutputDriver
+
+
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleArgument:
+	Receiver: a PharoCommandLineHandler
+	Arguments and temporary variables: 
+		arg1: 	'clean'
+	Receiver's instance variables: 
+		commandLine: 	a CommandLineArguments
+		session: 	a WorkingSession
+		stdout: 	a VTermOutputDriver
+		stderr: 	a VTermOutputDriver
+
+
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+	Receiver: a PharoCommandLineHandler
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		commandLine: 	a CommandLineArguments
+		session: 	a WorkingSession
+		stdout: 	a VTermOutputDriver
+		stderr: 	a VTermOutputDriver
+
+
+BlockClosure>>on:do:
+	Receiver: [ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]...etc...
+	Arguments and temporary variables: 
+		arg1: 	Exit
+		arg2: 	[ :arg2 | ^ self handleExit: arg2 ]
+	Receiver's instance variables: 
+		outerContext: 	PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+		startpc: 	49
+		numArgs: 	0
+
+
+PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+	Receiver: a PharoCommandLineHandler
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		commandLine: 	a CommandLineArguments
+		session: 	a WorkingSession
+		stdout: 	a VTermOutputDriver
+		stderr: 	a VTermOutputDriver
+
+
+PharoCommandLineHandler>>activate
+	Receiver: a PharoCommandLineHandler
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		commandLine: 	a CommandLineArguments
+		session: 	a WorkingSession
+		stdout: 	a VTermOutputDriver
+		stderr: 	a VTermOutputDriver
+
+
+PharoCommandLineHandler class(CommandLineHandler class)>>activateWith:
+	Receiver: PharoCommandLineHandler
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		superclass: 	BasicCommandLineHandler
+		methodDict: 	a MethodDictionary(#activate->PharoCommandLineHandler>>#activate #c...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#PharoCommandLineHandler
+		classPool: 	a Dictionary()
+		sharedPools: 	nil
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-CommandLineHandler'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+[ super activateWith: arg1 ] in PharoCommandLineHandler class>>activateWith:
+	Receiver: PharoCommandLineHandler
+	Arguments and temporary variables: 
+		arg1: 	a CommandLineArguments
+	Receiver's instance variables: 
+		superclass: 	BasicCommandLineHandler
+		methodDict: 	a MethodDictionary(#activate->PharoCommandLineHandler>>#activate #c...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#PharoCommandLineHandler
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-CommandLineHandler'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+NonInteractiveUIManager(UIManager)>>defer:
+	Receiver: a NonInteractiveUIManager
+	Arguments and temporary variables: 
+		arg1: 	[ super activateWith: arg1 ]
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoCommandLineHandler class>>activateWith:
+	Receiver: PharoCommandLineHandler
+	Arguments and temporary variables: 
+		arg1: 	a CommandLineArguments
+	Receiver's instance variables: 
+		superclass: 	BasicCommandLineHandler
+		methodDict: 	a MethodDictionary(#activate->PharoCommandLineHandler>>#activate #c...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#PharoCommandLineHandler
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-CommandLineHandler'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SmalltalkImage class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+ImageCleanerCommandLineHandler>>activate
+ImageCleanerCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ arg1 activateWith: commandLine ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleSubcommand
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+PharoCommandLineHandler>>activate
+PharoCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ super activateWith: arg1 ] in PharoCommandLineHandler class>>activateWith:
+NonInteractiveUIManager(UIManager)>>defer:
+PharoCommandLineHandler class>>activateWith:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ arg1 activateWith: commandLine ] in BasicCommandLineHandler>>activateSubCommand:
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activateSubCommand:
+BasicCommandLineHandler>>handleSubcommand
+BasicCommandLineHandler>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in BasicCommandLineHandler>>activate
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activate
+[ self new activate ] in BasicCommandLineHandler class>>startUp:
+BlockClosure>>cull:
+WorkingSession>>executeDeferredStartupActions:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+LoadUpdatesCommandLineHandler>>activate
+LoadUpdatesCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ arg1 activateWith: commandLine ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleSubcommand
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+PharoCommandLineHandler>>activate
+PharoCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ super activateWith: arg1 ] in PharoCommandLineHandler class>>activateWith:
+NonInteractiveUIManager(UIManager)>>defer:
+PharoCommandLineHandler class>>activateWith:
+[ arg1 activateWith: commandLine ] in BasicCommandLineHandler>>activateSubCommand:
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activateSubCommand:
+BasicCommandLineHandler>>handleSubcommand
+BasicCommandLineHandler>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in BasicCommandLineHandler>>activate
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activate
+[ self new activate ] in BasicCommandLineHandler class>>startUp:
+BlockClosure>>cull:
+WorkingSession>>executeDeferredStartupActions:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+ImageCleanerCommandLineHandler>>activate
+ImageCleanerCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ arg1 activateWith: commandLine ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleSubcommand
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+PharoCommandLineHandler>>activate
+PharoCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ super activateWith: arg1 ] in PharoCommandLineHandler class>>activateWith:
+NonInteractiveUIManager(UIManager)>>defer:
+PharoCommandLineHandler class>>activateWith:
+[ arg1 activateWith: commandLine ] in BasicCommandLineHandler>>activateSubCommand:
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activateSubCommand:
+BasicCommandLineHandler>>handleSubcommand
+BasicCommandLineHandler>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in BasicCommandLineHandler>>activate
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activate
+[ self new activate ] in BasicCommandLineHandler class>>startUp:
+BlockClosure>>cull:
+WorkingSession>>executeDeferredStartupActions:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+LoadUpdatesCommandLineHandler>>activate
+LoadUpdatesCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ arg1 activateWith: commandLine ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleSubcommand
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+PharoCommandLineHandler>>activate
+PharoCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ super activateWith: arg1 ] in PharoCommandLineHandler class>>activateWith:
+NonInteractiveUIManager(UIManager)>>defer:
+PharoCommandLineHandler class>>activateWith:
+[ arg1 activateWith: commandLine ] in BasicCommandLineHandler>>activateSubCommand:
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activateSubCommand:
+BasicCommandLineHandler>>handleSubcommand
+BasicCommandLineHandler>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in BasicCommandLineHandler>>activate
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activate
+[ self new activate ] in BasicCommandLineHandler class>>startUp:
+BlockClosure>>cull:
+WorkingSession>>executeDeferredStartupActions:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+ImageCleanerCommandLineHandler>>activate
+ImageCleanerCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ arg1 activateWith: commandLine ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleSubcommand
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activate
+PharoCommandLineHandler>>activate
+PharoCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ super activateWith: arg1 ] in PharoCommandLineHandler class>>activateWith:
+NonInteractiveUIManager(UIManager)>>defer:
+PharoCommandLineHandler class>>activateWith:
+[ arg1 activateWith: commandLine ] in BasicCommandLineHandler>>activateSubCommand:
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activateSubCommand:
+BasicCommandLineHandler>>handleSubcommand
+BasicCommandLineHandler>>handleArgument:
+[ self
+	handleArgument: (self arguments ifEmpty: [ '' ] ifNotEmpty: [ :arg1 | arg1 first ]) ] in BasicCommandLineHandler>>activate
+BlockClosure>>on:do:
+BasicCommandLineHandler>>activate
+[ self new activate ] in BasicCommandLineHandler class>>startUp:
+BlockClosure>>cull:
+WorkingSession>>executeDeferredStartupActions:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+LoadUpdatesCommandLineHandler>>activate
+LoadUpdatesCommandLineHandler class(CommandLineHandler class)>>activateWith:
+[ arg1 activateWith: commandLine ] in PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+BlockClosure>>on:do:
+PharoCommandLineHandler(BasicCommandLineHandler)>>activateSubCommand:
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleSubcommand
+PharoCommandLineHandler(BasicCommandLineHandler)>>handleArgument:
+-- and more not shown ---------------------------------------------------------------------------------
+
+
+===============================================================================
+Notice: Pharo cannot locate the sources file named C:\Users\Agustin\Documents\Pharo\vms\private\6521\PharoV60.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+===============================================================================
+THERE_BE_DRAGONS_HERE
+Instance of Topico did not understand #do:
+26 March 2019 2:47:26.092921 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60547]
+
+Topico(Object)>>doesNotUnderstand: #do:
+	Receiver: a Topico
+	Arguments and temporary variables: 
+		aMessage: 	do: [ :each | each agregarPregunta: self ]
+		exception: 	MessageNotUnderstood: Topico>>do:
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		nombre: 	'argentina'
+		descripcion: 	'pais'
+		preguntas: 	an OrderedCollection()
+
+
+Pregunta>>conTitulo:conDescripcion:topicos:
+	Receiver: a Pregunta
+	Arguments and temporary variables: 
+		unTitulo: 	'hola'
+		unaDescripcion: 	'salu2'
+		unTopicos: 	a Topico
+	Receiver's instance variables: 
+		titulo: 	'hola'
+		descripcion: 	'salu2'
+		respuestas: 	an OrderedCollection()
+		likes: 	an OrderedCollection()
+		dislikes: 	an OrderedCollection()
+		fechaCreacion: 	nil
+		topicos: 	a Topico
+		usuario: 	nil
+
+
+Pregunta class>>conTitulo:conDescripcion:topicos:
+	Receiver: Pregunta
+	Arguments and temporary variables: 
+		unTitulo: 	'hola'
+		unDescripcion: 	'salu2'
+		unTopicos: 	a Topico
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#conTitulo:conDescripcion:topicos:->Pregunta>>#c...etc...
+		format: 	65544
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Pregunta
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#TrabajoPractico1
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		topico: 	a Topico
+		pregunta: 	nil
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'|topico pregunta|
+
+topico:= Topico conNombre: ''argentina'' co...etc...
+		itsSelection: 	a Text for '|topico pregunta|
+
+topico:= Topico conNombre: ''argen...etc...
+		itsSelectionString: 	'|topico pregunta|
+
+topico:= Topico conNombre: ''argentina'...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	| topico pregunta |
+	topico := Topico conNombre: 'argentina' conDesc...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(565471488)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | 
+textMorph shoutStyler style: textMorph text.
+GLMPrintPoppe...etc...
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(565471488)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>popuTHERE_BE_DRAGONS_HERE
+Instance of Topico did not understand #do:
+26 March 2019 2:48:05.155921 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60547]
+
+Topico(Object)>>doesNotUnderstand: #do:
+	Receiver: a Topico
+	Arguments and temporary variables: 
+		aMessage: 	do: [ :each | each agregarPregunta: self ]
+		exception: 	MessageNotUnderstood: Topico>>do:
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		nombre: 	'argentina'
+		descripcion: 	'pais'
+		preguntas: 	an OrderedCollection()
+
+
+Pregunta>>conTitulo:conDescripcion:topicos:
+	Receiver: a Pregunta
+	Arguments and temporary variables: 
+		unTitulo: 	'hola'
+		unaDescripcion: 	'salu2'
+		unTopicos: 	a Topico
+	Receiver's instance variables: 
+		titulo: 	'hola'
+		descripcion: 	'salu2'
+		respuestas: 	an OrderedCollection()
+		likes: 	an OrderedCollection()
+		dislikes: 	an OrderedCollection()
+		fechaCreacion: 	nil
+		topicos: 	a Topico
+		usuario: 	nil
+
+
+Pregunta class>>conTitulo:conDescripcion:topicos:
+	Receiver: Pregunta
+	Arguments and temporary variables: 
+		unTitulo: 	'hola'
+		unDescripcion: 	'salu2'
+		unTopicos: 	a Topico
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#conTitulo:conDescripcion:topicos:->Pregunta>>#c...etc...
+		format: 	65544
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Pregunta
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#TrabajoPractico1
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+		topicos: 	an OrderedCollection(a Topico)
+		topico: 	a Topico
+		pregunta: 	nil
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'| topicos topico pregunta|
+
+topico:= Topico conNombre: ''argen...etc...
+		itsSelection: 	a Text for '| topicos topico pregunta|
+
+topico:= Topico conNombre...etc...
+		itsSelectionString: 	'| topicos topico pregunta|
+
+topico:= Topico conNombre: ''a...etc...
+	Receiver's instance variables: 
+		ast: 	DoIt
+	| topicos topico pregunta |
+	topico := Topico conNombre: 'argentina'...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(565471488)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | 
+textMorph shoutStyler style: textMorph text.
+GLMPrintPoppe...etc...
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(565471488)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>popupPrint
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(41244928)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+MorphicAlarm(MessageSend)>>value
+	Receiver: MorphicAlarm(#popupPrint -> a GLMMorphicPharoScriptRenderer)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPharoScriptRenderer
+		selector: 	#popupPrint
+		arguments: 	#()
+		scheduledTime: 	4047307
+		numArgs: 	0
+
+
+MorphicAlarm>>value:
+	Receiver: MorphicAlarm(#popupPrint -> a GLMMorphicPharoScriptRenderer)
+	Arguments and temporary variables: 
+		anArgument: 	4047311
+		nArgs: 	0
+	Receiver's instance variables: 
+		receiver: 	a GLMMorphicPharoScriptRenderer
+		selector: 	#popupPrint
+		arguments: 	#()
+		scheduledTime: 	4047307
+		numArgs: 	0
+
+
+WorldState>>triggerAlarmsBefore:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		nowTime: 	4047311
+		pending: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(301442816)))
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1366@705)
+		canvas: 	a FormCanvas on: DisplayScreen(1366x705x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(25136640))(a DropListM...etc...
+		lastStepTime: 	4047289
+		lastStepMessage: 	nil
+		lastCycleTime: 	4047311
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(301442816)))
+		lastAlarmTime: 	4047289
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>runLocalStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		now: 	4047311
+		morphToStep: 	nil
+		stepTime: 	nil
+		priorWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1366@705)
+		canvas: 	a FormCanvas on: DisplayScreen(1366x705x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(25136640))(a DropListM...etc...
+		lastStepTime: 	4047289
+		lastStepMessage: 	nil
+		lastCycleTime: 	4047311
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(301442816)))
+		lastAlarmTime: 	4047289
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	nil
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1366@705)
+		canvas: 	a FormCanvas on: DisplayScreen(1366x705x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(25136640))(a DropListM...etc...
+		lastStepTime: 	4047289
+		lastStepMessage: 	nil
+		lastCycleTime: 	4047311
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(301442816)))
+		lastAlarmTime: 	4047289
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1366@705)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a FadingMorph(494196480) a GLMSys...etc...
+		fullBounds: 	(0@0) corner: (1366@705)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (568575232) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.705 g: 0.705 b: 0.705 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldState>>doOneCycleNowFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1366@705)
+		canvas: 	a FormCanvas on: DisplayScreen(1366x705x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a DropListMorph(25136640))(a DropListM...etc...
+		lastStepTime: 	4047289
+		lastStepMessage: 	nil
+		lastCycleTime: 	4047311
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(301442816)))
+		lastAlarmTime: 	4047289
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+THERE_BE_DRAGONS_HERE
+#preguntas was sent to nil
+26 March 2019 2:49:21.679921 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60547]
+
+UndefinedObject(Object)>>doesNotUnderstand: #preguntas
+	Receiver: nil
+	Arguments and temporary variables: 
+		aMessage: 	preguntas
+		exception: 	MessageNotUnderstood: receiver of "preguntas" is nil
+		resumeValue: 	nil
+	Receiver's instance variables: 
+nil
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'topico preguntas .'
+		itsSelection: 	a Text for 'topico preguntas .'
+		itsSelectionString: 	'topico preguntas .'
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ topico preguntas
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(565471488)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | result inspect ]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(565471488)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(41244928)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+	Receiver: a RubEditingArea(565471488)
+	Arguments and temporary variables: 
+		editBlock: 	[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+text...etc...
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@259)
+		owner: 	a TransformWithLayoutMorph(191221248)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(895141888) a RubCursor(301442816...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (68304128) [other:  (announcer -> an Announcer) (km...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(147580416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	(6@6) corner: (6@6)
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(301442816)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(158813952))
+		getMenuPolicy: 	a RubEditingArea(565471488)
+		mouseDownPoint: 	nil
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluate
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(41244928)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	[ textMorph textArea
+	handleEdit: [ textMorph textArea editor high...etc...
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1366@705)
+		canvas: 	a FormCanvas on: DisplayScreen(1366x705x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(938465280))(a FadingMorp...etc...
+		lastStepTime: 	4123776
+		lastStepMessage: 	nil
+		lastCycleTime: 	4123798
+		alarms: 	a Heap()
+		lastAlarmTime: 	4123776
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1366@705)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(804941056) a FadingMorph(938465280) a GLMSys...etc...
+		fullBounds: 	(0@0) corner: (1366@705)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (568575232) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.705 g: 0.705 b: 0.705 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldState>>doOneCycleNowFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(58125568))
+		viewBox: 	(0@0) corner: (1366@705)
+		canvas: 	a FormCanvas on: DisplayScreen(1366x705x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a FadingMorph(938465280))(a FadingMorp...etc...
+		lastStepTime: 	4123776
+		lastStepMessage: 	nil
+		lastCycleTime: 	4123798
+		alarms: 	a Heap()
+		lastAlarmTime: 	4123776
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(58125568)
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 

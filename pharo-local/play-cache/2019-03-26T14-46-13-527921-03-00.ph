@@ -1,0 +1,1 @@
+| topicos topico pregunta|topico:= Topico conNombre: 'argentina' conDescripcion: 'pais'.topicos:= OrderedCollection new.topicos add: topico..pregunta:= Pregunta conTitulo: 'hola' conDescripcion: 'salu2' topicos: topicos.topico preguntas . 

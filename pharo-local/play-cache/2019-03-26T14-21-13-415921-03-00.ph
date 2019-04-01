@@ -1,0 +1,1 @@
+|usuario|usuario := Usuario conNombre: 'pepe' conContraseña: '1234'.usuario nombreUsuario .
