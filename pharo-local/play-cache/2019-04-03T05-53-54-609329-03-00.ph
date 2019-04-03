@@ -1,0 +1,1 @@
+| aux |aux:= OrderedCollection new.aux add: [ 54, 'hola' ].aux add: [ 33, 'chau' ].aux add: 56.aux detect: [ :each | each  ] ifNone: 
